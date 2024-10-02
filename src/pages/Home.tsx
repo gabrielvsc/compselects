@@ -4,7 +4,7 @@ import AboutUs from '../components/AboutUs';
 import Testimonials from '../components/Testimonials';
 import UpcomingEvents from '../components/UpcomingEvents';
 import Footer from '../components/Footer';
-import StickyHeader from '@/components/StickyHeader';
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   const publications = [
@@ -26,13 +26,19 @@ export default function Home() {
 
   return (
     <>
-      <StickyHeader />
-      <HeroSection />
-      <PublicationHighlights publications={publications} />
-      <AboutUs />
-      <Testimonials testimonials={testimonials} />
-      <UpcomingEvents events={events} />
-      <Footer />
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <HeroSection />
+        <PublicationHighlights publications={publications} />
+        <AboutUs />
+        <Testimonials testimonials={testimonials} />
+        <UpcomingEvents events={events} />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

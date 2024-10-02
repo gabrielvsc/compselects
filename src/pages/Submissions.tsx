@@ -1,11 +1,11 @@
-import StickyHeader from "@/components/StickyHeader";
+import Navbar from "@/components/Navbar";
 
 function Submissions() {
 
   return (
     <>
       <header>
-        <StickyHeader />
+        <Navbar />
       </header>
     </>
   )
