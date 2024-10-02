@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home.tsx';
 import About from './pages/About.tsx';
-import Posts from './pages/Posts.tsx';
+import Publications from './pages/Publications.tsx';
 import Authors from './pages/Authors.tsx';
 import Submissions from './pages/Submissions.tsx';
 import Events from './pages/Events.tsx';
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/posts" element={<Posts />} />
+          <Route path="/posts" element={<Publications />} />
           <Route path="/authors" element={<Authors />} />
           <Route path="/submissions" element={<Submissions />} />
           <Route path="/events" element={<Events />} />

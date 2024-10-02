@@ -1,27 +1,36 @@
-import { Card, CardContent } from "./ui/card";
+import { Link } from 'react-router-dom'
 
 interface Publication {
-  cover: string;
-  title: string;
-  author: string;
+  id: number
+  title: string
+  author: string
+  year: number
+  category: string
+  type: string
 }
 
 interface PublicationCardProps {
-  publication: Publication;
+  publication: Publication
 }
 
-const PublicationCard: React.FC<PublicationCardProps> = ({ publication }) => (
-  <Card>
-    <CardContent className="p-4">
-      <img 
-        src={publication.cover} 
-        alt={publication.title} 
-        className="w-full h-auto mb-4 rounded" 
-      />
-      <h3 className="font-bold text-lg mb-2">{publication.title}</h3>
-      <p className="text-gray-600">{publication.author}</p>
-    </CardContent>
-  </Card>
-);
-
-export default PublicationCard;
+export function PublicationCard({ publication }: PublicationCardProps) {
+  return (
+    <Link to={`/publications/${publication.id}`} className="block">
+      <div className="border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <img
+          src={`/placeholder.svg?height=200&width=300&text=${publication.title}`}
+          alt={publication.title}
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-4">
+          <h2 className="text-xl font-semibold mb-2">{publication.title}</h2>
+          <p className="text-gray-600 mb-2">By {publication.author}</p>
+          <p className="text-gray-600 mb-2">{publication.year}</p>
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+            {publication.category}
+          </span>
+        </div>
+      </div>
+    </Link>
+  )
+}
