@@ -1,9 +1,9 @@
-import HeroSection from '../components/HeroSection';
-import PublicationHighlights from '../components/PublicationHighlights';
-import AboutUs from '../components/AboutUs';
-import Testimonials from '../components/Testimonials';
-import UpcomingEvents from '../components/UpcomingEvents';
-import Footer from '../components/Footer';
+import HeroSection from '@/components/HeroSection';
+import PublicationHighlights from '@/components/PublicationHighlights';
+import AboutUs from '@/components/AboutUs';
+import Testimonials from '@/components/Testimonials';
+import UpcomingEvents from '@/components/UpcomingEvents';
+import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 
 export default function Home() {

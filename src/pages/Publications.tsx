@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import { PublicationsCatalog } from '../components/PublicationsCatalog'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import { PublicationsCatalog } from '@/components/PublicationsCatalog'
 import Header from '@/components/Header'
 import { AdvancedSearch } from '@/components/AdvancedSearch'
 
