@@ -45,11 +45,12 @@ export function AdvancedSearch({ onSearch }: AdvancedSearchProps) {
           onChange={(e) => setCategory(e.target.value)}
           className="w-full px-3 py-2 border rounded"
         >
-          <option value="">All Categories</option>
-          <option value="Fiction">Fiction</option>
-          <option value="Non-Fiction">Non-Fiction</option>
-          <option value="Science">Science</option>
-          <option value="Technology">Technology</option>
+          <option value="">Todas as Categorias</option>
+          <option value="Computação">Computação</option>
+          <option value="Programação">Programação</option>
+          <option value="Ciência de Dados">Ciência de Dados</option>
+          <option value="Matemática">Matemática</option>
+          <option value="Arquitetura de Software">Arquitetura de Software</option>
         </select>
       </div>
       <button

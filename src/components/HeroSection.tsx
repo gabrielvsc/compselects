@@ -1,7 +1,7 @@
 import { Button } from "./ui/button";
 
 const HeroSection = () => (
-  <section className="relative h-[500px] bg-gray-900 text-white">
+  <section className="relative h-[500px] bg-blue-950 text-white">
     <img
       src="https://www.spescoladeteatro.org.br/wp-content/uploads/2020/05/books.jpg"
       alt="New publications banner"
