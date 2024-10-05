@@ -13,13 +13,28 @@ export default function Home() {
   ];
 
   const testimonials = [
-    { id: 1, text: "A qualidade das publicações dessa editora é impecável. Os livros são bem editados, com um cuidado notável na revisão e diagramação. Fiquei impressionado com o profissionalismo e atenção aos detalhes!", author: "Mario Sergio Cortella", avatarUrl: "https://media.licdn.com/dms/image/C4E03AQFORNHukyQJdg/profile-displayphoto-shrink_200_200/0/1532886580278?e=2147483647&v=beta&t=pViysSrAOJjj0p9FpvJhlhJg8kB1JK1kuwXVuBmS0rU" },
-    { id: 2, text: "Como autor, posso dizer que o suporte oferecido pela editora durante todo o processo foi excelente. Me senti apoiado e valorizado, e o resultado final superou minhas expectativas. Recomendo a todos!", author: "Clóvis de Barros", avatarUrl: "https://media.licdn.com/dms/image/D4D03AQHPTJ6re4zVzQ/profile-displayphoto-shrink_200_200/0/1716320730990?e=2147483647&v=beta&t=9CiJgSTcLpuGr1bcagQ5ldsIeE5W3JTeRLm_oHjULWA" },
-    { id: 2, text: "Fiquei muito satisfeito com a experiência de publicação nesta editora. Desde o primeiro contato, a equipe foi extremamente atenciosa e dedicada, tornando todo o processo fluido e tranquilo. A qualidade do material final e o cuidado com cada etapa realmente fazem a diferença. Estou ansioso para continuar essa parceria.", author: "Luiz Felipe Pondé", avatarUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Psi0MDLGx0uUmSVBgDiXKpU2Uh2Esj00Qg&s" },
+    {
+      id: 1,
+      text: "A editora sempre entrega qualidade excepcional em cada publicação. Fiquei impressionado com o cuidado editorial e a dedicação em garantir que cada conceito técnico fosse apresentado de forma clara e precisa.",
+      author: "Andrew S. Tanenbaum",
+      avatarUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Andrew_S._Tanenbaum_2012.jpg"
+    },
+    {
+      id: 2,
+      text: "Trabalhar com essa editora foi uma experiência transformadora. Desde a primeira interação até a entrega do produto final, a equipe demonstrou um compromisso inabalável com a excelência e o respeito pela visão do autor.",
+      author: "Bjarne Stroustrup",
+      avatarUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bjarne_Stroustrup_%282013%29.jpg/220px-Bjarne_Stroustrup_%282013%29.jpg"
+    },
+    {
+      id: 3,
+      text: "O processo de revisão técnica foi detalhado e extremamente colaborativo. A editora realmente entende a importância de apresentar conteúdos complexos de uma forma que seja acessível sem sacrificar a profundidade.",
+      author: "Barbara Liskov",
+      avatarUrl: "https://upload.wikimedia.org/wikipedia/commons/3/38/Barbara_Liskov_MIT_computer_scientist_2010.jpg"
+    },
   ];
 
   const events = [
-    { id: 1, title: "Lançamento de Livro: Palavras ao Vento", date: "15 de Outubro de 2024, às 19h", location: "Livraria Cultura, São Paulo, SP" },
+    { id: 1, title: "Lançamento de Livro: Destruindo o Código Limpo", date: "15 de Outubro de 2024, às 19h", location: "Livraria Cultura, São Paulo, SP" },
     { id: 2, title: "Workshop de Escrita Criativa: Do Rascunho ao Best-Seller", date: "22 de Novembro de 2024, das 14h às 18h", location: "Auditório da Biblioteca Nacional, Rio de Janeiro, RJ" },
     { id: 2, title: "Bienal do Livro: Conexões Literárias", date: "1 a 10 de Setembro de 2024", location: "Centro de Convenções Anhembi, São Paulo, SP" },
   ];
