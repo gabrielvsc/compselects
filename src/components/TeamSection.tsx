@@ -2,9 +2,9 @@ import TeamCard from "./TeamCard"
 
 export default function TeamSection() {
   const teamMembers = [
-    { name: "Gabriel Vasconcelos", role: "Editor Sênior", image: "https://via.placeholder.com/200x300" },
-    { name: "Paulo Andrade", role: "Editor Sênior", image: "https://via.placeholder.com/200x300" },
-    { name: "Alfredo Vasconcelos", role: "Editor Sênior", image: "https://via.placeholder.com/200x300" },
+    { name: "Gabriel Vasconcelos", role: "Editor Sênior", image: "https://avatars.githubusercontent.com/u/91812687?v=4" },
+    { name: "Paulo Victor", role: "Editor Sênior", image: "https://avatars.githubusercontent.com/u/94625698?v=4" },
+    { name: "Alfredo Vasconcelos", role: "Editor Sênior", image: "https://avatars.githubusercontent.com/u/70920004?v=4" },
   ]
 
   return (

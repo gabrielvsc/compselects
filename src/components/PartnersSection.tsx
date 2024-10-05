@@ -2,12 +2,9 @@ import PartnerCard from "./PartnerCard"
 
 export default function PartnersSection() {
   const partners = [
-    { name: "Tech University", description: "Leading research institution in computer science", logo: "https://via.placeholder.com/200x300" },
-    { name: "InnovateCorp", description: "Global technology solutions provider", logo: "https://via.placeholder.com/200x300" },
-    { name: "DataSphere", description: "Big data and analytics company", logo: "https://via.placeholder.com/200x300" },
-    { name: "AI Frontiers", description: "Artificial intelligence research center", logo: "https://via.placeholder.com/200x300" },
-    { name: "CyberGuard", description: "Cybersecurity consulting firm", logo: "https://via.placeholder.com/200x300" },
-    { name: "CloudNine", description: "Cloud computing services provider", logo: "https://via.placeholder.com/200x300" },
+    { name: "Rocketseat", description: "Plataforma de Ensino de Programação", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpMdhz5AbI0bBXT_p6pu3gJ0OipamVbNHLDg&s" },
+    { name: "UFCG", description: "Universidade Federal de Campina Granade", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/UfcgBrasao.jpg/640px-UfcgBrasao.jpg" },
+    { name: "StackOverFlow", description: "Maior comunidade de desenvolvedores do mundo", logo: "https://media.wired.com/photos/5926db217034dc5f91becd6b/master/w_2560%2Cc_limit/so-logo-s.jpg" },
   ]
 
   return (
