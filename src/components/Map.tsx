@@ -1,23 +1,4 @@
-import { useLoadScript, GoogleMap, MarkerF } from '@react-google-maps/api'
-
-const mapContainerStyle = {
-  width: '100%',
-  height: '400px',
-}
-
-const center = {
-  lat: 40.7128,
-  lng: -74.0060,
-}
-
 export function Map() {
-  const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: 'YOUR_GOOGLE_MAPS_API_KEY',
-  })
-
-  if (loadError) return <div>Error loading maps</div>
-  if (!isLoaded) return <div>Loading maps</div>
-
   return (
     <div>
       <h2 className="text-2xl font-bold mb-4">Nossa localização</h2>
