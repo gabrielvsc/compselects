@@ -1,13 +1,5 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
-
-interface Post {
-  id: string
-  title: string
-  excerpt: string
-  category: 'trends' | 'interviews' | 'news'
-  author: string
-  date: string
-}
+import { Post } from '../pages/Blog'
 
 interface PostListProps {
   posts: Post[]

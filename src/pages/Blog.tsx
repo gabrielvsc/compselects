@@ -6,7 +6,7 @@ import PostList from '@/components/PostList'
 import PostDetails from '@/components/PostDetails'
 import { Button } from '@/components/ui/button'
 
-interface Post {
+export interface Post {
   id: string
   title: string
   excerpt: string
@@ -99,7 +99,6 @@ const samplePosts: Post[] = [
     "date": "2024-09-24"
   }
 ]
-
 
 export default function BlogPage() {
   const [selectedPost, setSelectedPost] = React.useState<Post | null>(null)

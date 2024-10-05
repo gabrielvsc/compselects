@@ -47,13 +47,11 @@ export default function Events() {
                   onSelect={setDate}
                   className="rounded-md border"
                   components={{
-                    Day: ({ date, isSelected }) => {
+                    Day: ({ date }) => {
                       const isEvent = eventDates.includes(date.toDateString())
                       return (
                         <div 
-                          className={`relative flex h-8 w-8 items-center justify-center p-0 font-normal aria-selected:opacity-100 ${
-                            isSelected ? 'bg-primary text-primary-foreground' : ''
-                          }`}
+                          className={`relative flex h-8 w-8 items-center justify-center p-0 font-normal aria-selected:opacity-100`}
                         >
                           <time dateTime={format(date, 'yyyy-MM-dd')}>
                             {date.getDate()}

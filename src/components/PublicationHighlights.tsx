@@ -19,7 +19,7 @@ interface PublicationHighlightsProps {
   publications: Publication[];
 }
 
-const PublicationHighlights: React.FC<PublicationHighlightsProps> = ({ publications }) => {
+const PublicationHighlights: React.FC<PublicationHighlightsProps> = () => {
   const books = [
     { id: 1, title: "Clean Code", author: "Robert C. Martin", cover: "https://m.media-amazon.com/images/I/51E2055ZGUL._AC_UF1000,1000_QL80_.jpg" },
     { id: 2, title: "Grokking Algorithms", author: "Aditya Y. Bhargava", cover: "https://m.media-amazon.com/images/I/81HwgKQ39lS._AC_UF1000,1000_QL80_.jpg" },
