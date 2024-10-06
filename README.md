@@ -1,50 +1,44 @@
-# React + TypeScript + Vite
+# 📚 Compselects
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um site institucional desenvolvido para a editora fictícia **Compselects** utilizando as tecnologias **ReactJS, TypeScript, Vite e Shadcn**. O objetivo principal é modernizar o site existente, proporcionando uma plataforma digital moderna e interativa para conectar autores e leitores, apresentar publicações e facilitar a compra e o acesso a diversos recursos relacionados à área de computação.
 
-Currently, two official plugins are available:
+O Projeto pode ser visualizado em: https://compselects.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💻 Tecnologias Utilizadas
+- **ReactJS**: Biblioteca JavaScript para construção de interfaces.
+- **TypeScript**: Superset de JavaScript com suporte a tipagem estática.
+- **Vite**: Ferramenta de build e desenvolvimento rápida.
+- **Shadcn**: Biblioteca de componentes para React.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📁 Estrutura de Pastas
+A estrutura de pastas do projeto é organizada da seguinte forma:
+```
+src/
+├── assets/          # Arquivos de mídia e imagens
+├── components/      # Componentes React reutilizáveis
+    ├── ui/          # Componentes importados do Shadcn
+├── pages/           # Páginas do site
+├── App.tsx          # Componente principal do app
+└── main.tsx         # Ponto de entrada do aplicativo
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## 💻 Instalação e Uso
+Para rodar o projeto localmente:
+1. Clone o repositório:
+```bash
+git clone https://github.com/gabrielvsc/compselects.git
 ```
+2. Acesse o diretório:
+```bash
+cd compselects
+```
+3. Instale as dependências:
+```bash
+npm install
+```
+4. Rode o servidor local:
+```bash
+npm run dev
+```
+
+O projeto estará disponível em `http://localhost:5173`.
